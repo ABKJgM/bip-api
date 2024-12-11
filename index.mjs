@@ -219,7 +219,7 @@ app.post("/login", async (req, res) => {
         req.session.role = user.role;
         req.session.name = user.name;
         req.session.surname = user.surname;
-        console.log(`User ${username} logged in successfully`);
+        console.log(`User ${username} logged in successfully.`);
 
         // Respond with user details
         return res.status(200).json({
